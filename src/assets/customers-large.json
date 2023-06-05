@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "id": 10,
+      "name": "James Butt",
+      "company": "Benton",
+      "date": "2015-09-13",
+      "status": "unqualified",
+      "activity": 17
+    },
+    {
+      "id": 20,
+      "name": "Josephine",
+      "company": "Chanay",
+      "date": "2019-02-09",
+      "status": "proposal",
+      "activity": 0
+    },
+    {
+      "id": 30,
+      "name": "Art Venere",
+      "company": "Chemel",
+      "date": "2017-05-13",
+      "status": "qualified",
+      "activity": 63
+    },
+    {
+      "id": 40,
+      "name": "Lenna Paprocki",
+      "company": "Feltz",
+      "date": "2020-09-15",
+      "status": "new",
+      "activity": 37
+    }
+  ]
+}

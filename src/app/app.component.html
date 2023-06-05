@@ -1,0 +1,28 @@
+<div>
+  <h2>{{ 'HOME.TITLE' | translate }}</h2>
+  
+  <h4>{{ titled | translate }}</h4>
+  <label>
+    <div >
+      <p style="display: inline">{{ 'HOME.TRAINING' | translate  }}</p> <p> {{today | date: "full": currentLanguage}}</p>
+    </div>
+    {{ 'HOME.SELECT' | translate }}
+    <select #langSelect (change)="translate.use(langSelect.value)">
+      <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+    </select>
+  </label>
+</div>
+
+<!-- <table>
+  <tbody>
+    <tr *ngFor="let item of NewtableData; index as i">
+      <td>{{ item.id }}</td>
+      <td>{{ item.activity }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.prenom }}</td>
+      <td [style.color]="item.color">{{ item.situation }}</td>
+      <td><span class="dot mr" [ngClass]="item.color"></span></td>
+    </tr>
+  </tbody>
+</table> -->
+
